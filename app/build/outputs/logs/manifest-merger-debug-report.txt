@@ -1,0 +1,130 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:2:1-26:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/ubom/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/87b18af8337a0f731bcadd3a0d838240/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:design:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/eda3e577b1e3fb3956fff2a4a23bae14/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/f06f629acbbd997d6c1dbf31c4107d70/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/9e281007ea2ea2fa0cd27ff9e1a518f6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/778aa96e29fbed81748f9fa7979f1860/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/84df40e0ee54a643aecdb491613c5e4c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/4e4ef582f45629f7a90ecc1ea53bc242/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/ce35525bfd54236e37123677fc76f4a0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/43e68d4660b99a48eefd08ad3fc4a21d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/1d5a2e25113f472cfbaef2094fd66dc8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/d885ba87c2a36a3b977dd00a953c6b83/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/2c1fc60e86aad81aa8c46b231f077854/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/3fac1f1239e41d6fc3bd0c43ea5aa666/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/ubom/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/ccebfba336b58f41294be96644e416f7/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/ubom/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/20260c823f1d0b51f0a85329adc879cd/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/ubom/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/dff164f6078292ca58458d12d3678be0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/ubom/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/5c6561f6dd4312c41e486c60c74742e0/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:2:1-26:12
+	package
+		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:3:5-41
+		INJECTED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:2:1-26:12
+		INJECTED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:2:1-26:12
+		INJECTED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:5:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:6:22-64
+application
+ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:8:5-24:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/ubom/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/87b18af8337a0f731bcadd3a0d838240/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/ubom/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/87b18af8337a0f731bcadd3a0d838240/AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:11:9-41
+	android:icon
+		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:13:9-40
+activity#com.example.ubom.newslines.newsfeed.MainActivity
+ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:14:9-20:20
+	android:name
+		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:14:19-56
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:15:13-19:29
+action#android.intent.action.MAIN
+ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:16:17-69
+	android:name
+		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:18:27-74
+activity#com.example.ubom.newslines.newsfeed.SettingsActivity
+ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:21:9-23:72
+	android:label
+		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:23:13-60
+	android:name
+		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:22:13-54
+uses-sdk
+INJECTED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/ubom/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/87b18af8337a0f731bcadd3a0d838240/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/ubom/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/87b18af8337a0f731bcadd3a0d838240/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/eda3e577b1e3fb3956fff2a4a23bae14/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/eda3e577b1e3fb3956fff2a4a23bae14/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/f06f629acbbd997d6c1dbf31c4107d70/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/f06f629acbbd997d6c1dbf31c4107d70/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/9e281007ea2ea2fa0cd27ff9e1a518f6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/9e281007ea2ea2fa0cd27ff9e1a518f6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/778aa96e29fbed81748f9fa7979f1860/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/778aa96e29fbed81748f9fa7979f1860/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/84df40e0ee54a643aecdb491613c5e4c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/84df40e0ee54a643aecdb491613c5e4c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/4e4ef582f45629f7a90ecc1ea53bc242/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/4e4ef582f45629f7a90ecc1ea53bc242/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/ce35525bfd54236e37123677fc76f4a0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/ce35525bfd54236e37123677fc76f4a0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/43e68d4660b99a48eefd08ad3fc4a21d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/43e68d4660b99a48eefd08ad3fc4a21d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/1d5a2e25113f472cfbaef2094fd66dc8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/1d5a2e25113f472cfbaef2094fd66dc8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/d885ba87c2a36a3b977dd00a953c6b83/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/d885ba87c2a36a3b977dd00a953c6b83/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/2c1fc60e86aad81aa8c46b231f077854/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/2c1fc60e86aad81aa8c46b231f077854/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/3fac1f1239e41d6fc3bd0c43ea5aa666/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/ubom/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/3fac1f1239e41d6fc3bd0c43ea5aa666/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/ubom/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/ccebfba336b58f41294be96644e416f7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/ubom/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/ccebfba336b58f41294be96644e416f7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/ubom/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/20260c823f1d0b51f0a85329adc879cd/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/ubom/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/20260c823f1d0b51f0a85329adc879cd/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/ubom/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/dff164f6078292ca58458d12d3678be0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/ubom/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/dff164f6078292ca58458d12d3678be0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/ubom/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/5c6561f6dd4312c41e486c60c74742e0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/ubom/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/5c6561f6dd4312c41e486c60c74742e0/AndroidManifest.xml:20:5-44
+INJECTED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml

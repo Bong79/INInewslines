@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--view for text title-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Nollywood Uncut"
+        style="@style/title"/>
+    <!--view for text author-->
+    <TextView
+        android:id="@+id/author"
+        tools:text="Koye Shotade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/author" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--view for text date-->
+        <TextView
+            android:id="@+id/date"
+            tools:text="Jul 24, 2018"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/date"/>
+        <!--view for text section-->
+        <TextView
+            android:id="@+id/section"
+            tools:text="Movies"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/section"/>
+    </LinearLayout>
+
+</LinearLayout>

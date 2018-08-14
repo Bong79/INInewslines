@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newsfeed.MainActivity">
+   <!--&lt;!&ndash;allows user to swipe to reload&ndash;&gt;-->
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<!--populates data into list view-->
+        <ListView
+        android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="1dp"
+        />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!-- Empty view is only visible when the list has no items. -->
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/empty_list"
+        />
+
+</RelativeLayout>
