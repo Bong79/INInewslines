@@ -1,8 +1,12 @@
 package com.example.ubom.newslines.newsfeed;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.preference.CheckBoxPreference;
 import android.preference.PreferenceActivity;
+import android.preference.PreferenceManager;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
@@ -27,7 +31,28 @@ public abstract class AppCompatPreferenceActivity extends PreferenceActivity {
         super.onCreate(savedInstanceState);
     }
 
-    @Override
+    public void onStart(Intent intent, int startId) {
+        getPrefs();
+    }
+
+    private void getPrefs() {
+        SharedPreferences prefs = PreferenceManager
+                .getDefaultSharedPreferences(getBaseContext());
+        checkboxPreference1 = prefs.getBoolean("checkboxPref", true);
+        checkboxPreference2 = prefs.getBoolean("checkboxPref", true);
+    }
+}
+    final CheckBoxPreference checkboxPref = (CheckBoxPreference) getPreferenceManager().findPreference("checkboxPref");
+
+         checkboxPref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+         public boolean onPreferenceChange(Preference preference, Object newValue) {
+           Log.d("MyApp", "Pref " + preference.getKey() + " changed to " + newValue.toString());
+        return true;
+        }
+        });
+
+
+@Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
         getDelegate().onPostCreate(savedInstanceState);

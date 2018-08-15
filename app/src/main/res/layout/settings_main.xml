@@ -2,16 +2,18 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
-    android:layout_width="match_parent"
-    android:key="first_preferencescreen">
+    android:layout_width="match_parent">
+    <!--android:key="first_preferencescreen">-->
     <CheckBoxPreference
-        android:key="change date"
-        android:title="Date" />
-    <PreferenceScreen
-        android:key="second_preferencescreen"
-        android:title="Topic Category">
+        android:key="check"
+        android:title="Date"
+        android:summary="change date"/>
+    <!--<PreferenceScreen-->
+        <!--android:key="second_preferencescreen"-->
+        <!--android:title="Topic Category">-->
         <CheckBoxPreference
-            android:key="topic category"
-            android:title="Change Topic" />
-    </PreferenceScreen>
+            android:key="check"
+            android:title="Change Topic"
+            android:summary="change topic"/>
+    <!--</PreferenceScreen>-->
 </PreferenceScreen>
