@@ -3,10 +3,12 @@ package com.example.ubom.newslines.newsfeed;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.Loader;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -37,6 +39,7 @@ public class MainActivity
     /** TextView that is displayed when the list is empty */
     private TextView mEmptyStateTextView;
 
+    private static final String URL_BASE = "https://content.guardianapis.com/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,6 +106,34 @@ public class MainActivity
     @Override
     public Loader<List<News>> onCreateLoader(int id, Bundle args) {
         return new NewsLoader(this);
+    }
+
+    @Override
+    // onCreateLoader instantiates and returns a new Loader for the given ID
+    public Loader<List<News>> onCreateLoader(int i, Bundle bundle) {
+
+        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
+
+        // getString retrieves a String value from the preferences. The second parameter is the default value for this preference.
+        String minMagnitude = sharedPrefs.getString(
+                getString(R.string.date),
+                getString(R.string.changeTopic));
+
+        // parse breaks apart the URI string that's passed into its parameter
+        Uri baseUri = Uri.parse(URL_BASE);
+
+        // buildUpon prepares the baseUri that we just parsed so we can add query parameters to it
+        Uri.Builder uriBuilder = baseUri.buildUpon();
+
+        // Append query parameter and its value. For example, the `format=geojson`
+        uriBuilder.appendQueryParameter("format", "geojson");
+        uriBuilder.appendQueryParameter("limit", "10");
+        uriBuilder.appendQueryParameter("date", "topic");
+        uriBuilder.appendQueryParameter("orderby", "time");
+
+        // Return the completed uri `http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&limit=10&minmag=minMagnitude&orderby=time
+        return new NewsLoader(this, uriBuilder.toString());
+
     }
 
     @Override

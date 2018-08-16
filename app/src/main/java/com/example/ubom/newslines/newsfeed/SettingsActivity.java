@@ -3,6 +3,7 @@ package com.example.ubom.newslines.newsfeed;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
@@ -38,9 +39,10 @@ import java.util.List;
 public class SettingsActivity extends AppCompatPreferenceActivity {
 
 
-//import android.os.Bundle;
+    //import android.os.Bundle;
 //    import android.preference.PreferenceFragment;
 //    import android.support.v7.app.AppCompatActivity;
+    public static class NollywoodNewsFragment extends PreferenceFragment implements Preference.OnPreferenceChangeListener {
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +50,22 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
             setContentView(R.layout.settings_activity);
         }
 
-        public static class NollywoodNewsFragment extends PreferenceFragment {
+        @Override
+        public boolean onPreferenceChange(Preference preference, Object value) {
+            // The code in this method takes care of updating the displayed preference summary after it has been changed
+            String stringValue = value.toString();
+            preference.setSummary(stringValue);
+            Preference date = findPreference(getString(R.string.date));
+            Preference changeTopic = findPreference(getString(R.string.changeTopic));
 
+            bindPreferenceSummaryToValue(date);
+        }
+
+        private void bindPreferenceSummaryToValue(Preference preference) {
+            preference.setOnPreferenceChangeListener(this);
+            SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(preference.getContext());
+            String preferenceString = preferences.getString(preference.getKey(), "");
+            onPreferenceChange(preference, preferenceString);
         }
     }
+}
