@@ -869,8 +869,12 @@
     <string name="pref_title_system_sync_settings">System sync settings</string>
     <string name="pref_title_vibrate">Vibrate</string>
     <string name="search_menu_title">Search</string>
+    <string name="settings_menu_change_date">Change Date</string>
+    <string name="settings_menu_change_topic">Change Topic </string>
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">Settings Menu</string>
+    <string name="settings_topic_category">Topic Category</string>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <string name="title_activity_settings">Settings</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

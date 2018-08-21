@@ -103,10 +103,10 @@ public class MainActivity
 
 
     //override methods
-    @Override
-    public Loader<List<News>> onCreateLoader(int id, Bundle args) {
-        return new NewsLoader(this);
-    }
+//    @Override
+//    public Loader<List<News>> onCreateLoader(int id, Bundle args) {
+//        return new NewsLoader(this);
+//    }
 
     @Override
     // onCreateLoader instantiates and returns a new Loader for the given ID
@@ -115,21 +115,27 @@ public class MainActivity
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
 
         // getString retrieves a String value from the preferences. The second parameter is the default value for this preference.
-        String minMagnitude = sharedPrefs.getString(
-                getString(R.string.date),
-                getString(R.string.changeTopic));
 
-        // parse breaks apart the URI string that's passed into its parameter
+//        String sharedPrefsString = sharedPrefs.getString(
+//                getString(R.string.date),
+//                getString(R.string.changeTopic));
+
+        String orderBy = sharedPrefs.getString(
+                getString(R.string.settings_order_by_key),
+                getString(R.string.settings_order_by_default)
+
+
+                // parse breaks apart the URI string that's passed into its parameter
         Uri baseUri = Uri.parse(URL_BASE);
 
         // buildUpon prepares the baseUri that we just parsed so we can add query parameters to it
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
         // Append query parameter and its value. For example, the `format=geojson`
-        uriBuilder.appendQueryParameter("format", "geojson");
-        uriBuilder.appendQueryParameter("limit", "10");
-        uriBuilder.appendQueryParameter("date", "topic");
-        uriBuilder.appendQueryParameter("orderby", "time");
+        uriBuilder.appendQueryParameter("format", "json");
+        uriBuilder.appendQueryParameter("page-size", "10");
+        uriBuilder.appendQueryParameter("orderby", "topic");
+        uriBuilder.appendQueryParameter("orderby", "date");
 
         // Return the completed uri `http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&limit=10&minmag=minMagnitude&orderby=time
         return new NewsLoader(this, uriBuilder.toString());
@@ -158,7 +164,7 @@ public class MainActivity
     public void onRefresh() {
         getSupportLoaderManager().restartLoader(LOADER_ID, null, this);
     }
-}
+
 
     @Override
     // This method initialize the contents of the Activity's options menu.

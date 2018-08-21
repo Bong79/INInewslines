@@ -36,7 +36,7 @@ import java.util.List;
  * href="http://developer.android.com/guide/topics/ui/settings.html">Settings
  * API Guide</a> for more information on developing a Settings UI.
  */
-public class SettingsActivity extends AppCompatPreferenceActivity {
+public class SettingsActivity extends AppCompatActivity {
 
 
     //import android.os.Bundle;
@@ -55,10 +55,9 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
             // The code in this method takes care of updating the displayed preference summary after it has been changed
             String stringValue = value.toString();
             preference.setSummary(stringValue);
-            Preference date = findPreference(getString(R.string.date));
-            Preference changeTopic = findPreference(getString(R.string.changeTopic));
+            Preference topic = findPreference(getString(R.string.settings_topic_key));
 
-            bindPreferenceSummaryToValue(date);
+            bindPreferenceSummaryToValue(topic);
         }
 
         private void bindPreferenceSummaryToValue(Preference preference) {

@@ -3,17 +3,25 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
     android:layout_width="match_parent">
-    <!--android:key="first_preferencescreen">-->
-    <CheckBoxPreference
-        android:key="check"
-        android:title="Date"
-        android:summary="change date"/>
-    <!--<PreferenceScreen-->
-        <!--android:key="second_preferencescreen"-->
-        <!--android:title="Topic Category">-->
-        <CheckBoxPreference
-            android:key="check"
-            android:title="Change Topic"
-            android:summary="change topic"/>
-    <!--</PreferenceScreen>-->
+    <ListPreference
+        android:defaultValue="date"
+        android:entries="@array/settings_topic_label"
+        android:entryValues="@array/settings_topic_value"
+        android:key="Settings order by key"
+        android:title="Order by" />
+    <!--<ListPreference-->
+        <!--android:defaultValue="@string/settings_order_by_default"-->
+        <!--android:entries="@array/settings_order_by_labels"-->
+        <!--android:entryValues="@array/settings_order_by_values"-->
+        <!--android:key="@string/settings_order_by_key"-->
+        <!--android:title="Change Topic"/>-->
+
+
+    <!--<CheckBoxPreference-->
+        <!--android:key="check"-->
+        <!--android:summary="change date"/>-->
+
+        <!--<CheckBoxPreference-->
+            <!--android:key="check"-->
+            <!--android:summary="change topic"/>-->
 </PreferenceScreen>
