@@ -37,6 +37,8 @@ public final class R {
     public static final int pref_example_list_values=0x7f030004;
     public static final int pref_sync_frequency_titles=0x7f030005;
     public static final int pref_sync_frequency_values=0x7f030006;
+    public static final int settings_topic_label=0x7f030007;
+    public static final int settings_topic_value=0x7f030008;
   }
   public static final class attr {
     /**
@@ -3667,27 +3669,27 @@ public final class R {
     public static final int action_mode_bar=0x7f090014;
     public static final int action_mode_bar_stub=0x7f090015;
     public static final int action_mode_close_button=0x7f090016;
-    public static final int action_text=0x7f090017;
-    public static final int actions=0x7f090018;
-    public static final int activity_chooser_view_content=0x7f090019;
-    public static final int add=0x7f09001a;
-    public static final int alertTitle=0x7f09001b;
-    public static final int all=0x7f09001c;
-    public static final int always=0x7f09001d;
-    public static final int async=0x7f09001e;
-    public static final int author=0x7f09001f;
-    public static final int auto=0x7f090020;
-    public static final int barrier=0x7f090021;
-    public static final int beginning=0x7f090022;
-    public static final int blocking=0x7f090023;
-    public static final int bottom=0x7f090024;
-    public static final int buttonPanel=0x7f090025;
-    public static final int cancel_action=0x7f090026;
-    public static final int center=0x7f090027;
-    public static final int center_horizontal=0x7f090028;
-    public static final int center_vertical=0x7f090029;
-    public static final int chains=0x7f09002a;
-    public static final int changeTopic=0x7f09002b;
+    public static final int action_settings=0x7f090017;
+    public static final int action_text=0x7f090018;
+    public static final int actions=0x7f090019;
+    public static final int activity_chooser_view_content=0x7f09001a;
+    public static final int add=0x7f09001b;
+    public static final int alertTitle=0x7f09001c;
+    public static final int all=0x7f09001d;
+    public static final int always=0x7f09001e;
+    public static final int async=0x7f09001f;
+    public static final int author=0x7f090020;
+    public static final int auto=0x7f090021;
+    public static final int barrier=0x7f090022;
+    public static final int beginning=0x7f090023;
+    public static final int blocking=0x7f090024;
+    public static final int bottom=0x7f090025;
+    public static final int buttonPanel=0x7f090026;
+    public static final int cancel_action=0x7f090027;
+    public static final int center=0x7f090028;
+    public static final int center_horizontal=0x7f090029;
+    public static final int center_vertical=0x7f09002a;
+    public static final int chains=0x7f09002b;
     public static final int checkbox=0x7f09002c;
     public static final int chronometer=0x7f09002d;
     public static final int clip_horizontal=0x7f09002e;
@@ -3913,11 +3915,11 @@ public final class R {
     public static final int select_dialog_multichoice_material=0x7f0b003b;
     public static final int select_dialog_singlechoice_material=0x7f0b003c;
     public static final int settings_activity=0x7f0b003d;
-    public static final int support_simple_spinner_dropdown_item=0x7f0b003e;
+    public static final int settings_main=0x7f0b003e;
+    public static final int support_simple_spinner_dropdown_item=0x7f0b003f;
   }
   public static final class menu {
     public static final int main=0x7f0c0000;
-    public static final int settings_main=0x7f0c0001;
   }
   public static final class mipmap {
     public static final int ic_launcher=0x7f0d0000;
@@ -3981,9 +3983,22 @@ public final class R {
     public static final int settings_menu_change_date=0x7f0e0036;
     public static final int settings_menu_change_topic=0x7f0e0037;
     public static final int settings_menu_item=0x7f0e0038;
-    public static final int settings_title=0x7f0e0039;
-    public static final int settings_topic_category=0x7f0e003a;
-    public static final int status_bar_notification_info_overflow=0x7f0e003b;
+    public static final int settings_order_by_default=0x7f0e0039;
+    public static final int settings_order_by_key=0x7f0e003a;
+    public static final int settings_order_by_most_recent_label=0x7f0e003b;
+    public static final int settings_order_by_most_recent_value=0x7f0e003c;
+    public static final int settings_order_by_subject_value=0x7f0e003d;
+    public static final int settings_title=0x7f0e003e;
+    public static final int settings_topic_category=0x7f0e003f;
+    public static final int settings_topic_default=0x7f0e0040;
+    public static final int settings_topic_foreign_label=0x7f0e0041;
+    public static final int settings_topic_foreign_value=0x7f0e0042;
+    public static final int settings_topic_key=0x7f0e0043;
+    public static final int settings_topic_movies_label=0x7f0e0044;
+    public static final int settings_topic_movies_value=0x7f0e0045;
+    public static final int settings_topic_pidgin_label=0x7f0e0046;
+    public static final int settings_topic_pidgin_value=0x7f0e0047;
+    public static final int status_bar_notification_info_overflow=0x7f0e0048;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0f0000;

@@ -610,15 +610,15 @@ public final class R {
         public static final int action_mode_bar = 0x7f090014;
         public static final int action_mode_bar_stub = 0x7f090015;
         public static final int action_mode_close_button = 0x7f090016;
-        public static final int action_text = 0x7f090017;
-        public static final int actions = 0x7f090018;
-        public static final int activity_chooser_view_content = 0x7f090019;
-        public static final int add = 0x7f09001a;
-        public static final int alertTitle = 0x7f09001b;
-        public static final int async = 0x7f09001e;
-        public static final int blocking = 0x7f090023;
-        public static final int bottom = 0x7f090024;
-        public static final int buttonPanel = 0x7f090025;
+        public static final int action_text = 0x7f090018;
+        public static final int actions = 0x7f090019;
+        public static final int activity_chooser_view_content = 0x7f09001a;
+        public static final int add = 0x7f09001b;
+        public static final int alertTitle = 0x7f09001c;
+        public static final int async = 0x7f09001f;
+        public static final int blocking = 0x7f090024;
+        public static final int bottom = 0x7f090025;
+        public static final int buttonPanel = 0x7f090026;
         public static final int checkbox = 0x7f09002c;
         public static final int chronometer = 0x7f09002d;
         public static final int contentPanel = 0x7f090032;
@@ -740,7 +740,7 @@ public final class R {
         public static final int select_dialog_item_material = 0x7f0b003a;
         public static final int select_dialog_multichoice_material = 0x7f0b003b;
         public static final int select_dialog_singlechoice_material = 0x7f0b003c;
-        public static final int support_simple_spinner_dropdown_item = 0x7f0b003e;
+        public static final int support_simple_spinner_dropdown_item = 0x7f0b003f;
     }
     public static final class string {
         public static final int abc_action_bar_home_description = 0x7f0e0000;
@@ -773,7 +773,7 @@ public final class R {
         public static final int abc_shareactionprovider_share_with_application = 0x7f0e001b;
         public static final int abc_toolbar_collapse_description = 0x7f0e001c;
         public static final int search_menu_title = 0x7f0e0035;
-        public static final int status_bar_notification_info_overflow = 0x7f0e003b;
+        public static final int status_bar_notification_info_overflow = 0x7f0e0048;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat = 0x7f0f0000;

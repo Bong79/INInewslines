@@ -67,9 +67,9 @@ public final class R {
         public static final int layout_optimizationLevel = 0x7f0400f7;
     }
     public static final class id {
-        public static final int barrier = 0x7f090021;
-        public static final int bottom = 0x7f090024;
-        public static final int chains = 0x7f09002a;
+        public static final int barrier = 0x7f090022;
+        public static final int bottom = 0x7f090025;
+        public static final int chains = 0x7f09002b;
         public static final int dimensions = 0x7f09003e;
         public static final int direct = 0x7f09003f;
         public static final int end = 0x7f090042;

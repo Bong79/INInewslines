@@ -25,16 +25,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- <activity -->
+        <!-- android:name=".newsfeed.SettingsActivity" -->
+        <!-- android:label="@string/settings_title"></activity> -->
         <activity
             android:name="com.example.ubom.newslines.newsfeed.SettingsActivity"
-            android:label="@string/settings_menu_item" />
-        <activity
-            android:name="com.example.ubom.newslines.SettingsActivity"
             android:label="@string/settings_title"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.ubom.newslines.Activity" />
+                android:value="com.example.ubom.newslines.newsfeed.MainActivity" />
         </activity>
     </application>
 

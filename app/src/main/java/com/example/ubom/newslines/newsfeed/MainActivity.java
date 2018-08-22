@@ -39,7 +39,7 @@ public class MainActivity
     /** TextView that is displayed when the list is empty */
     private TextView mEmptyStateTextView;
 
-    private static final String URL_BASE = "https://content.guardianapis.com/";
+    private static final String GUARDIAN_REQUEST_URL = "https://content.guardianapis.com/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -126,7 +126,7 @@ public class MainActivity
 
 
                 // parse breaks apart the URI string that's passed into its parameter
-        Uri baseUri = Uri.parse(URL_BASE);
+        Uri baseUri = Uri.parse(GUARDIAN_REQUEST_URL);
 
         // buildUpon prepares the baseUri that we just parsed so we can add query parameters to it
         Uri.Builder uriBuilder = baseUri.buildUpon();

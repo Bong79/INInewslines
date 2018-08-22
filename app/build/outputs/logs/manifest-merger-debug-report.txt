@@ -75,23 +75,17 @@ ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:1
 	android:name
 		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:18:27-74
 activity#com.example.ubom.newslines.newsfeed.SettingsActivity
-ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:21:9-23:67
-	android:label
-		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:23:13-55
-	android:name
-		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:22:13-54
-activity#com.example.ubom.newslines.SettingsActivity
 ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:24:9-31:20
 	android:screenOrientation
 		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:27:13-49
 	android:label
 		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:26:13-51
 	android:name
-		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:25:13-45
+		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:25:13-54
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:28:13-30:70
+ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:28:13-30:83
 	android:value
-		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:30:17-68
+		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:30:17-81
 	android:name
 		ADDED from /Users/ubom/Downloads/INInewslines/app/src/main/AndroidManifest.xml:29:17-63
 uses-sdk

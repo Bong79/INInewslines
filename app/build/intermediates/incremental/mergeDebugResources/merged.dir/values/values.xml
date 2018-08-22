@@ -37,6 +37,16 @@
         <item>360</item>
         <item>-1</item>
     </string-array>
+    <string-array name="settings_topic_label">
+        <item>@string/settings_topic_pidgin_label</item>
+        <item>@string/settings_topic_movies_label</item>
+        <item>@string/settings_topic_foreign_label</item>
+    </string-array>
+    <string-array name="settings_topic_value">
+        <item>@string/settings_topic_pidgin_value</item>
+        <item>@string/settings_topic_movies_value</item>
+        <item>@string/settings_topic_foreign_value</item>
+    </string-array>
     <attr format="boolean" name="barrierAllowsGoneWidgets"/>
     <attr format="enum" name="barrierDirection">
         <enum name="left" value="0"/>
@@ -872,8 +882,21 @@
     <string name="settings_menu_change_date">Change Date</string>
     <string name="settings_menu_change_topic">Change Topic </string>
     <string name="settings_menu_item">Settings</string>
+    <string name="settings_order_by_default" translatable="false">@string/settings_order_by_subject_value</string>
+    <string name="settings_order_by_key" translatable="false">order_by</string>
+    <string name="settings_order_by_most_recent_label">Most Recent</string>
+    <string name="settings_order_by_most_recent_value" translatable="false">newest</string>
+    <string name="settings_order_by_subject_value" translatable="false">keyword</string>
     <string name="settings_title">Settings Menu</string>
     <string name="settings_topic_category">Topic Category</string>
+    <string name="settings_topic_default" translatable="false">Nollywood</string>
+    <string name="settings_topic_foreign_label">Foreign</string>
+    <string name="settings_topic_foreign_value" translatable="false">foreign</string>
+    <string name="settings_topic_key" translatable="false">display_topic</string>
+    <string name="settings_topic_movies_label">Movies</string>
+    <string name="settings_topic_movies_value" translatable="false">movies</string>
+    <string name="settings_topic_pidgin_label">Pidgin</string>
+    <string name="settings_topic_pidgin_value" translatable="false">pidgin</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
