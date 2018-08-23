@@ -68,21 +68,21 @@ public class SettingsActivity extends AppCompatActivity {
 //            preference.setSummary(stringValue);
 //
 //        }
-//      2  public boolean onPreferenceChange(Preference preference, Object value) {
-//            String stringValue = value.toString();
-//            if (preference instanceof ListPreference) {
-//                ListPreference listPreference = (ListPreference) preference;
-//                int prefIndex = listPreference.findIndexOfValue(stringValue);
-//                if (prefIndex >= 0) {
-//                    CharSequence[] labels = listPreference.getEntries();
-//                    preference.setSummary(labels[prefIndex]);
-//                }
-//            } else {
-//                preference.setSummary(stringValue);
-//            }
-//
-//            return true;
-//        }
+        public boolean onPreferenceChange(Preference preference, Object value) {
+            String stringValue = value.toString();
+            if (preference instanceof ListPreference) {
+                ListPreference listPreference = (ListPreference) preference;
+                int prefIndex = listPreference.findIndexOfValue(stringValue);
+                if (prefIndex >= 0) {
+                    CharSequence[] labels = listPreference.getEntries();
+                    preference.setSummary(labels[prefIndex]);
+                }
+            } else {
+                preference.setSummary(stringValue);
+            }
+
+            return true;
+        }
 
         private void bindPreferenceSummaryToValue(Preference preference) {
             preference.setOnPreferenceChangeListener(this);
