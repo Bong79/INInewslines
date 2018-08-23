@@ -36,7 +36,7 @@ public class QueryUtils {
                 .appendQueryParameter("show-references", "author")
                 .appendQueryParameter("show-tags", "contributor")
                 .appendQueryParameter("q", "Nollywood")
-                .appendQueryParameter("api-key", "test");
+                .appendQueryParameter("api-key", "896df9d7-548f-41eb-b4a0-475707743f15");
         String url = builder.build().toString();
         return url;
     }

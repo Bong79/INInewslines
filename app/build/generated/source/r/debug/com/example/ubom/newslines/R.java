@@ -3915,8 +3915,7 @@ public final class R {
     public static final int select_dialog_multichoice_material=0x7f0b003b;
     public static final int select_dialog_singlechoice_material=0x7f0b003c;
     public static final int settings_activity=0x7f0b003d;
-    public static final int settings_main=0x7f0b003e;
-    public static final int support_simple_spinner_dropdown_item=0x7f0b003f;
+    public static final int support_simple_spinner_dropdown_item=0x7f0b003e;
   }
   public static final class menu {
     public static final int main=0x7f0c0000;
@@ -14720,5 +14719,6 @@ public final class R {
     public static final int pref_general=0x7f110001;
     public static final int pref_headers=0x7f110002;
     public static final int pref_notification=0x7f110003;
+    public static final int settings_main=0x7f110004;
   }
 }

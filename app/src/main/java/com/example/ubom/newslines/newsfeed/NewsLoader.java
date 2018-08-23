@@ -43,14 +43,16 @@ public class NewsLoader extends AsyncTaskLoader<List<News>> {
      */
     @Override
     public List<News> loadInBackground() {
+        Log.d(LOG_TAG, "loadInBackground()");
+
         if (this.url == null) {
             return null;
+//            Log.d("LOG_TAG", "loadInBackground()");
         }
 
         // Perform the network request, parse the response, and extract a list of news.
-        List<News> INInewslines = QueryUtils.makeHttpRequest(this.url);
-        Log.d("myTag", "This is my message");
+        List<News> listOfNews = QueryUtils.parseJson(this.url);
 
-        return INInewslines;
+        return listOfNews;
     }
 }
