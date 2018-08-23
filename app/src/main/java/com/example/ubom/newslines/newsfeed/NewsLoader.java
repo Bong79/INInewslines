@@ -16,30 +16,41 @@ public class NewsLoader extends AsyncTaskLoader<List<News>> {
 
     /**
      * Constructor for a new {@link NewsLoader}.
+     *
      * @param context of the activity
      */
 
-    public NewsLoader(Context context) {
+    private String url;
+
+    /**
+     * Constructs a new {@link NewsLoader}.
+     *
+     * @param context of the activity
+     * @param url     to load data from
+     */
+    public NewsLoader(Context context, String url) {
         super(context);
+        this.url = url;
     }
 
-    //override methods
     @Override
     protected void onStartLoading() {
-
         forceLoad();
     }
 
+    /**
+     * This is on a background thread.
+     */
     @Override
     public List<News> loadInBackground() {
-        List<News> listOfNews = null;
-        try {
-            URL url = QueryUtils.createUrl();
-            String jsonResponse = QueryUtils.makeHttpRequest(url);
-            listOfNews = QueryUtils.parseJson(jsonResponse);
-        } catch (IOException e) {
-            Log.e("Queryutils", "Error Loader LoadInBackground: ", e);
+        if (this.url == null) {
+            return null;
         }
-        return listOfNews;
+
+        // Perform the network request, parse the response, and extract a list of news.
+        List<News> INInewslines = QueryUtils.makeHttpRequest(this.url);
+        Log.d("myTag", "This is my message");
+
+        return INInewslines;
     }
 }

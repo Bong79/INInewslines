@@ -17,6 +17,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="com.example.ubom.newslines.newsfeed.MainActivity" >
             <intent-filter>
@@ -25,9 +26,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- <activity -->
-        <!-- android:name=".newsfeed.SettingsActivity" -->
-        <!-- android:label="@string/settings_title"></activity> -->
         <activity
             android:name="com.example.ubom.newslines.newsfeed.SettingsActivity"
             android:label="@string/settings_title"

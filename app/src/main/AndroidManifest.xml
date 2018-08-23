@@ -18,9 +18,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--<activity-->
-            <!--android:name=".newsfeed.SettingsActivity"-->
-            <!--android:label="@string/settings_title"></activity>-->
         <activity
             android:name=".newsfeed.SettingsActivity"
             android:label="@string/settings_title"

@@ -122,7 +122,7 @@ public class MainActivity
 
         String orderBy = sharedPrefs.getString(
                 getString(R.string.settings_order_by_key),
-                getString(R.string.settings_order_by_default)
+                getString(R.string.settings_order_by_default));
 
 
                 // parse breaks apart the URI string that's passed into its parameter
@@ -134,8 +134,8 @@ public class MainActivity
         // Append query parameter and its value. For example, the `format=geojson`
         uriBuilder.appendQueryParameter("format", "json");
         uriBuilder.appendQueryParameter("page-size", "10");
-        uriBuilder.appendQueryParameter("orderby", "topic");
-        uriBuilder.appendQueryParameter("orderby", "date");
+        uriBuilder.appendQueryParameter("order-by", "topic");
+        uriBuilder.appendQueryParameter("order-by", "date");
 
         // Return the completed uri `http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&limit=10&minmag=minMagnitude&orderby=time
         return new NewsLoader(this, uriBuilder.toString());
@@ -177,7 +177,7 @@ public class MainActivity
 @Override
 public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.date || id == R.id.changeTopic) {
+        if (id == R.id.action_settings) {
         Intent settingsIntent = new Intent(this, SettingsActivity.class);
         startActivity(settingsIntent);
         return true;

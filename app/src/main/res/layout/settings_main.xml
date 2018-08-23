@@ -8,7 +8,9 @@
         android:entries="@array/settings_topic_label"
         android:entryValues="@array/settings_topic_value"
         android:key="Settings order by key"
-        android:title="Order by" />
+        android:title="Order by"
+        android:summary="%s"
+        />
     <!--<ListPreference-->
         <!--android:defaultValue="@string/settings_order_by_default"-->
         <!--android:entries="@array/settings_order_by_labels"-->

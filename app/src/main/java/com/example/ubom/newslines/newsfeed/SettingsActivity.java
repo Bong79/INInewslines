@@ -38,6 +38,11 @@ import java.util.List;
  */
 public class SettingsActivity extends AppCompatActivity {
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.settings_activity);
+    }
 
     //import android.os.Bundle;
 //    import android.preference.PreferenceFragment;
@@ -45,20 +50,39 @@ public class SettingsActivity extends AppCompatActivity {
     public static class NollywoodNewsFragment extends PreferenceFragment implements Preference.OnPreferenceChangeListener {
 
         @Override
-        protected void onCreate(Bundle savedInstanceState) {
+        public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.settings_activity);
-        }
+            addPreferencesFromResource(R.xml.settings_main);
 
-        @Override
-        public boolean onPreferenceChange(Preference preference, Object value) {
-            // The code in this method takes care of updating the displayed preference summary after it has been changed
-            String stringValue = value.toString();
-            preference.setSummary(stringValue);
+            Preference orderby = findPreference(getString(R.string.settings_order_by_key));
+            bindPreferenceSummaryToValue(orderby);
+
             Preference topic = findPreference(getString(R.string.settings_topic_key));
-
             bindPreferenceSummaryToValue(topic);
         }
+
+//        @Override
+//     1   public boolean onPreferenceChange(Preference preference, Object value) {
+//            // The code in this method takes care of updating the displayed preference summary after it has been changed
+//            String stringValue = value.toString();
+//            preference.setSummary(stringValue);
+//
+//        }
+//      2  public boolean onPreferenceChange(Preference preference, Object value) {
+//            String stringValue = value.toString();
+//            if (preference instanceof ListPreference) {
+//                ListPreference listPreference = (ListPreference) preference;
+//                int prefIndex = listPreference.findIndexOfValue(stringValue);
+//                if (prefIndex >= 0) {
+//                    CharSequence[] labels = listPreference.getEntries();
+//                    preference.setSummary(labels[prefIndex]);
+//                }
+//            } else {
+//                preference.setSummary(stringValue);
+//            }
+//
+//            return true;
+//        }
 
         private void bindPreferenceSummaryToValue(Preference preference) {
             preference.setOnPreferenceChangeListener(this);
