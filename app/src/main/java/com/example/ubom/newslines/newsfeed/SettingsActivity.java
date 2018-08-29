@@ -44,9 +44,7 @@ public class SettingsActivity extends AppCompatActivity {
         setContentView(R.layout.settings_activity);
     }
 
-    //import android.os.Bundle;
-//    import android.preference.PreferenceFragment;
-//    import android.support.v7.app.AppCompatActivity;
+
     public static class NollywoodNewsFragment extends PreferenceFragment implements Preference.OnPreferenceChangeListener {
 
         @Override
@@ -61,13 +59,6 @@ public class SettingsActivity extends AppCompatActivity {
             bindPreferenceSummaryToValue(topic);
         }
 
-//        @Override
-//     1   public boolean onPreferenceChange(Preference preference, Object value) {
-//            // The code in this method takes care of updating the displayed preference summary after it has been changed
-//            String stringValue = value.toString();
-//            preference.setSummary(stringValue);
-//
-//        }
         public boolean onPreferenceChange(Preference preference, Object value) {
             String stringValue = value.toString();
             if (preference instanceof ListPreference) {

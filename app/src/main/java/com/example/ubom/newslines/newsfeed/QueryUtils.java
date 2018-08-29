@@ -70,7 +70,9 @@ public class QueryUtils {
 
     //makes http request
     static String makeHttpRequest(URL url) throws IOException {
-        String jsonResponse = "https://content.guardianapis.com/search?q=Nollywood&api-key=896df9d7-548f-41eb-b4a0-475707743f15";
+        Log.v("TAG", "url:" + url);
+
+        String jsonResponse = "";
 
         if (url == null){
             return jsonResponse;
@@ -89,6 +91,7 @@ public class QueryUtils {
             urlConnection.setConnectTimeout(15000 /* milliseconds */);
             //Start connection
             urlConnection.connect();
+
             //Check if network connection ok
             if (urlConnection.getResponseCode() == 200){
             //Read Json
@@ -126,12 +129,29 @@ public class QueryUtils {
     }
 
     //Goes to arraylist with json results
-    static List<News> parseJson(String response) {
+    public static List<News> parseJson(String response)
+    {        Log.v("TAG", response);
+
         ArrayList<News> listOfNews = new ArrayList<>();
         try {
             JSONObject jsonResponse = new JSONObject(response);
             JSONObject jsonResults = jsonResponse.getJSONObject("response");
             JSONArray resultsArray = jsonResults.getJSONArray("results");
+
+            public static List<News> parseJson(String response) {
+                URL url = createUrl(response);
+                String jsonResponse = "";
+                try {
+                    jsonResponse = makeHttpRequest(url);
+                } catch (IOException e) {
+
+                    Log.e("LOG_TAG", "It was not possible to connect to the server", e);
+                }
+                List<News> listOfNews = extractFeatureFromJson(jsonResponse);
+                return listOfNews;
+
+            }
+
 
             for (int i = 0; i < resultsArray.length(); i++) {
                 JSONObject oneResult = resultsArray.getJSONObject(i);

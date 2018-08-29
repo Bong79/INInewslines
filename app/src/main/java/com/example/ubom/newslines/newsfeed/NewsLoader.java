@@ -14,6 +14,7 @@ import java.util.List;
 
 public class NewsLoader extends AsyncTaskLoader<List<News>> {
 
+    private static final String LOG_TAG = NewsLoader.class.getName();
     /**
      * Constructor for a new {@link NewsLoader}.
      *
@@ -47,7 +48,7 @@ public class NewsLoader extends AsyncTaskLoader<List<News>> {
 
         if (this.url == null) {
             return null;
-//            Log.d("LOG_TAG", "loadInBackground()");
+
         }
 
         // Perform the network request, parse the response, and extract a list of news.

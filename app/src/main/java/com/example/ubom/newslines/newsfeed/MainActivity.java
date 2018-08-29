@@ -19,10 +19,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Adapter;
 import android.widget.AdapterView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.ubom.newslines.R;
 
@@ -38,6 +36,7 @@ public class MainActivity
     SwipeRefreshLayout swipe;
     /** TextView that is displayed when the list is empty */
     private TextView mEmptyStateTextView;
+    private static final String LOG_TAG = "MyActivity";
 
     private static final String GUARDIAN_REQUEST_URL = "https://content.guardianapis.com/";
 
@@ -62,7 +61,6 @@ public class MainActivity
         listView.setEmptyView(emptyText);
 
         if (isNetworkConnected()) {
-            //onRefresh();
             emptyText.setVisibility(View.GONE);
             getSupportLoaderManager().initLoader(LOADER_ID, null, this);
         } else {
@@ -102,12 +100,6 @@ public class MainActivity
     }
 
 
-    //override methods
-//    @Override
-//    public Loader<List<News>> onCreateLoader(int id, Bundle args) {
-//        return new NewsLoader(this);
-//    }
-
     @Override
     // onCreateLoader instantiates and returns a new Loader for the given ID
     public Loader<List<News>> onCreateLoader(int i, Bundle bundle) {
@@ -115,10 +107,6 @@ public class MainActivity
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
 
         // getString retrieves a String value from the preferences. The second parameter is the default value for this preference.
-
-//        String sharedPrefsString = sharedPrefs.getString(
-//                getString(R.string.date),
-//                getString(R.string.changeTopic));
 
         String orderBy = sharedPrefs.getString(
                 getString(R.string.settings_order_by_key),

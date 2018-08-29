@@ -832,12 +832,12 @@
         "source": "/Users/ubom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/9e281007ea2ea2fa0cd27ff9e1a518f6/res/layout/abc_action_bar_up_container.xml"
     },
     {
-        "merged": "/Users/ubom/Downloads/INInewslines/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
-        "source": "/Users/ubom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/9e281007ea2ea2fa0cd27ff9e1a518f6/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
-    },
-    {
         "merged": "/Users/ubom/Downloads/INInewslines/app/build/intermediates/res/merged/debug/xml_settings_main.xml.flat",
         "source": "/Users/ubom/Downloads/INInewslines/app/src/main/res/xml/settings_main.xml"
+    },
+    {
+        "merged": "/Users/ubom/Downloads/INInewslines/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
+        "source": "/Users/ubom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/9e281007ea2ea2fa0cd27ff9e1a518f6/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "/Users/ubom/Downloads/INInewslines/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
