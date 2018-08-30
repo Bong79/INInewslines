@@ -36,8 +36,7 @@ public class MainActivity
     SwipeRefreshLayout swipe;
     /** TextView that is displayed when the list is empty */
     private TextView mEmptyStateTextView;
-    private static final String LOG_TAG = "MyActivity";
-
+    public static final String LOG_TAG = MainActivity.class.getSimpleName();
     private static final String GUARDIAN_REQUEST_URL = "https://content.guardianapis.com/";
 
     @Override
@@ -123,7 +122,7 @@ public class MainActivity
         uriBuilder.appendQueryParameter("format", "json");
         uriBuilder.appendQueryParameter("page-size", "10");
         uriBuilder.appendQueryParameter("order-by", "topic");
-        uriBuilder.appendQueryParameter("order-by", "date");
+        uriBuilder.appendQueryParameter("order-by", "webPublicationDate");
 
         // Return the completed uri `http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&limit=10&minmag=minMagnitude&orderby=time
         return new NewsLoader(this, uriBuilder.toString());
