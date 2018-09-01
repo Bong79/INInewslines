@@ -27,18 +27,39 @@ import java.util.Locale;
  */
 public class QueryUtils {
 
+    public static final String LOG_TAG = MainActivity.class.getSimpleName();
+
     static String createStringUrl() {
         Uri.Builder builder = new Uri.Builder();
         builder.scheme("http")
                 .encodedAuthority("content.guardianapis.com")
                 .appendPath("search")
-                .appendQueryParameter("order-by", "newest")
+                .appendQueryParameter("order-by", "orderBy")
                 .appendQueryParameter("show-references", "author")
                 .appendQueryParameter("show-tags", "contributor")
                 .appendQueryParameter("q", "Nollywood")
                 .appendQueryParameter("api-key", "896df9d7-548f-41eb-b4a0-475707743f15");
         String url = builder.build().toString();
         return url;
+    }
+
+    public static List<News> fetchNewsData(String requestUrl) {
+        // Create URL object
+        URL url = createUrl(requestUrl);
+
+        // Perform HTTP request to the URL and receive a JSON response back
+        String jsonResponse = null;
+        try {
+            jsonResponse = makeHttpRequest(url);
+        } catch (IOException e) {
+            Log.e(LOG_TAG, "Error closing input stream", e);
+        }
+
+        // Extract relevant fields from the JSON response and create an {@link Event} object
+        List<News> listOfNews = parseJson(jsonResponse);
+
+        // Return the {@link Event}
+        return listOfNews;
     }
 
     static URL createUrl() {

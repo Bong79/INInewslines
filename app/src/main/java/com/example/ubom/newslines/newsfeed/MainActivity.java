@@ -24,6 +24,7 @@ import android.widget.TextView;
 
 import com.example.ubom.newslines.R;
 
+import java.net.URL;
 import java.util.List;
 
 
@@ -111,21 +112,22 @@ public class MainActivity
                 getString(R.string.settings_order_by_key),
                 getString(R.string.settings_order_by_default));
 
+        URL url = QueryUtils.createUrl();
 
                 // parse breaks apart the URI string that's passed into its parameter
-        Uri baseUri = Uri.parse(GUARDIAN_REQUEST_URL);
-
-        // buildUpon prepares the baseUri that we just parsed so we can add query parameters to it
-        Uri.Builder uriBuilder = baseUri.buildUpon();
-
-        // Append query parameter and its value. For example, the `format=geojson`
-        uriBuilder.appendQueryParameter("format", "json");
-        uriBuilder.appendQueryParameter("page-size", "10");
-        uriBuilder.appendQueryParameter("order-by", "topic");
-        uriBuilder.appendQueryParameter("order-by", "webPublicationDate");
+//        Uri baseUri = Uri.parse(GUARDIAN_REQUEST_URL);
+//
+//        // buildUpon prepares the baseUri that we just parsed so we can add query parameters to it
+//        Uri.Builder uriBuilder = baseUri.buildUpon();
+//
+//        // Append query parameter and its value. For example, the `format=geojson`
+//        uriBuilder.appendQueryParameter("format", "json");
+//        uriBuilder.appendQueryParameter("page-size", "10");
+//        uriBuilder.appendQueryParameter("order-by", "relevance");
+//        uriBuilder.appendQueryParameter("order-by", "oldest");
 
         // Return the completed uri `http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&limit=10&minmag=minMagnitude&orderby=time
-        return new NewsLoader(this, uriBuilder.toString());
+        return new NewsLoader(this, url.toString());
 
     }
 

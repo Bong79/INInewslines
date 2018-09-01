@@ -46,6 +46,8 @@ public class NewsLoader extends AsyncTaskLoader<List<News>> {
     public List<News> loadInBackground() {
         Log.d(LOG_TAG, "loadInBackground()");
 
+
+
         if (this.url == null) {
             return null;
 
