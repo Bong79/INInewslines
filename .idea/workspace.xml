@@ -17,10 +17,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc8bf083-c682-40f1-98eb-993a6312a583" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ubom/newslines/newsfeed/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ubom/newslines/newsfeed/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ubom/newslines/newsfeed/NewsLoader.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ubom/newslines/newsfeed/NewsLoader.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ubom/newslines/newsfeed/QueryUtils.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ubom/newslines/newsfeed/QueryUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,13 +46,15 @@
     <splitter split-orientation="vertical" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubom/newslines/newsfeed/MainActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="275">
-                  <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+                <state relative-caret-position="-299">
+                  <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#4829#4867#0" expanded="true" />
+                    <element signature="e#4885#4927#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -69,11 +70,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="QueryUtils.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="QueryUtils.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubom/newslines/newsfeed/QueryUtils.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1910">
-                  <caret line="36" column="58" lean-forward="false" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
+                <state relative-caret-position="123">
+                  <caret line="75" column="10" lean-forward="false" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
                   <folding />
                 </state>
               </provider>
@@ -82,7 +83,7 @@
           <file leaf-file-name="NewsLoader.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubom/newslines/newsfeed/NewsLoader.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="73">
+                <state relative-caret-position="-57">
                   <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
                   <folding />
                 </state>
@@ -92,8 +93,8 @@
           <file leaf-file-name="scratch.java" pinned="false" current-in-tab="false">
             <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="313">
-                  <caret line="126" column="0" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+                <state relative-caret-position="238">
+                  <caret line="140" column="9" lean-forward="false" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
@@ -172,8 +173,8 @@
           <file leaf-file-name="list_item.xml" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="5" />
+                <state relative-caret-position="60">
+                  <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
                   <folding />
                 </state>
               </provider>
@@ -223,11 +224,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="strings.xml" pinned="false" current-in-tab="true">
+          <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="116">
-                  <caret line="9" column="88" lean-forward="true" selection-start-line="9" selection-start-column="88" selection-end-line="9" selection-end-column="88" />
+                  <caret line="9" column="88" lean-forward="false" selection-start-line="9" selection-start-column="88" selection-end-line="9" selection-end-column="88" />
                   <folding />
                 </state>
               </provider>
@@ -263,7 +264,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="arrays.xml" pinned="false" current-in-tab="false">
+          <file leaf-file-name="arrays.xml" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/res/values/arrays.xml">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="225">
@@ -2278,9 +2279,10 @@
         <option value="$PROJECT_DIR$/app/src/main/res/xml/settings_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubom/newslines/newsfeed/SettingsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubom/newslines/newsfeed/NewsLoader.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubom/newslines/newsfeed/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubom/newslines/newsfeed/QueryUtils.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubom/newslines/newsfeed/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -2673,7 +2675,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1535706773457" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1535866743303" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2720,7 +2722,7 @@
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1535706773457" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1535866743303" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2902,7 +2904,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1535706773458" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1535866743329" />
       </method>
     </configuration>
     <list size="1">
@@ -2953,7 +2955,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1393" height="877" extended-state="1" />
+    <frame x="0" y="23" width="1393" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
@@ -2976,7 +2978,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24722427" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24722427" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2990,6 +2992,41 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32866243" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32866243" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32790527" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24722427" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -3219,19 +3256,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="56" lean-forward="false" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
-          <folding>
-            <element signature="e#317#345#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/settings_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -3262,17 +3286,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/settings_activity.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -3293,14 +3306,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -3351,14 +3356,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/arrays.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/settings_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -3378,44 +3375,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubom/newslines/newsfeed/NewsLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="9" column="88" lean-forward="true" selection-start-line="9" selection-start-column="88" selection-end-line="9" selection-end-column="88" />
+        <state relative-caret-position="-57">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubom/newslines/newsfeed/NewsLoader.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubom/newslines/newsfeed/QueryUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="75" column="10" lean-forward="false" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="56" lean-forward="false" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
+          <folding>
+            <element signature="e#317#345#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="9" column="88" lean-forward="false" selection-start-line="9" selection-start-column="88" selection-end-line="9" selection-end-column="88" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="126" column="0" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="140" column="9" lean-forward="false" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubom/newslines/newsfeed/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="-299">
+          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4829#4867#0" expanded="true" />
+            <element signature="e#4885#4927#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubom/newslines/newsfeed/QueryUtils.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/arrays.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1910">
-          <caret line="36" column="58" lean-forward="false" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
+        <state relative-caret-position="225">
+          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
           <folding />
         </state>
       </provider>

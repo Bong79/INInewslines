@@ -62,16 +62,26 @@ public class QueryUtils {
         return listOfNews;
     }
 
-    static URL createUrl() {
-        String stringUrl = createStringUrl();
-        try {
-            return new URL(stringUrl);
-        } catch (MalformedURLException e) {
-            Log.e("Queryutils", "Error creating URL: ", e);
-            return null;
-        }
-    }
+//    static URL createUrl() {
+//    private static URL createUrl(String stringUrl) {
+//    String stringUrl = createStringUrl();
+//        try {
+//            return new URL(stringUrl);
+//        } catch (MalformedURLException e) {
+//            Log.e("Queryutils", "Error creating URL: ", e);
+//            return null;
+//        }
+//    }
 
+    public static URL createUrl(String stringUrl) {
+        URL url = null;
+        try {
+            url = new URL(stringUrl);
+        } catch (MalformedURLException e) {
+            Log.e(LOG_TAG, "Problem building the URL ", e);
+        }
+        return url;
+    }
 
 
     //Formats date

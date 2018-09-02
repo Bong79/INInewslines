@@ -126,6 +126,17 @@ public class MainActivity
 //        uriBuilder.appendQueryParameter("order-by", "relevance");
 //        uriBuilder.appendQueryParameter("order-by", "oldest");
 
+//        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
+//        String topic = sharedPrefs.getString(
+                getString(R.string.settings_topic_key),
+                getString(R.string.settings_topic_default)
+        );
+        Uri baseUri = Uri.parse(GUARDIAN_REQUEST_URL);
+        Uri.Builder uriBuilder = baseUri.buildUpon();
+        uriBuilder.appendQueryParameter("order-by", "oldest");
+        uriBuilder.appendQueryParameter("order-by", "relevance");
+
+
         // Return the completed uri `http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&limit=10&minmag=minMagnitude&orderby=time
         return new NewsLoader(this, url.toString());
 
