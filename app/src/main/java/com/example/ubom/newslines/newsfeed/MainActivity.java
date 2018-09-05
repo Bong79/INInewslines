@@ -107,20 +107,18 @@ public class MainActivity
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
 
         // getString retrieves a String value from the preferences. The second parameter is the default value for this preference.
-
         String orderBy = sharedPrefs.getString(
                 getString(R.string.settings_order_by_key),
-                getString(R.string.settings_order_by_default));
+                getString(R.string.settings_order_by_default)
+        );
 
-        URL url = QueryUtils.createUrl();
 
-                // parse breaks apart the URI string that's passed into its parameter
 //        Uri baseUri = Uri.parse(GUARDIAN_REQUEST_URL);
 //
 //        // buildUpon prepares the baseUri that we just parsed so we can add query parameters to it
 //        Uri.Builder uriBuilder = baseUri.buildUpon();
 //
-//        // Append query parameter and its value. For example, the `format=geojson`
+
 //        uriBuilder.appendQueryParameter("format", "json");
 //        uriBuilder.appendQueryParameter("page-size", "10");
 //        uriBuilder.appendQueryParameter("order-by", "relevance");
@@ -128,17 +126,24 @@ public class MainActivity
 
 //        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
 //        String topic = sharedPrefs.getString(
-                getString(R.string.settings_topic_key),
-                getString(R.string.settings_topic_default)
-        );
+//                getString(R.string.settings_topic_key),
+//                getString(R.string.settings_topic_default)
+//        );
+
+//        URL url = QueryUtils.createUrl();
+
+        // parse breaks apart the URI string that's passed into its parameter
+
         Uri baseUri = Uri.parse(GUARDIAN_REQUEST_URL);
+
+        //        // Append query parameter and its value. For example, the `format=geojson`
         Uri.Builder uriBuilder = baseUri.buildUpon();
         uriBuilder.appendQueryParameter("order-by", "oldest");
         uriBuilder.appendQueryParameter("order-by", "relevance");
 
 
         // Return the completed uri `http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&limit=10&minmag=minMagnitude&orderby=time
-        return new NewsLoader(this, url.toString());
+        return new NewsLoader(this, uriBuilder.toString());
 
     }
 
