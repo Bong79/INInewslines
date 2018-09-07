@@ -5,8 +5,8 @@
     android:layout_width="match_parent">
     <ListPreference
         android:defaultValue="date"
-        android:entries="@array/settings_topic_label"
-        android:entryValues="@array/settings_topic_value"
+        android:entries="@array/settings_order_by_labels"
+        android:entryValues="@array/settings_order_by_values"
         android:key="Settings order by key"
         android:title="Order by"
         android:summary="%s"

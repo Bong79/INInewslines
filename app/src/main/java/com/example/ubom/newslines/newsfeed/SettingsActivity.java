@@ -11,6 +11,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.ListPreference;
+
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.support.v7.app.ActionBar;
@@ -52,11 +53,9 @@ public class SettingsActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.settings_main);
 
-            Preference orderby = findPreference(getString(R.string.settings_order_by_key));
-            bindPreferenceSummaryToValue(orderby);
+            Preference orderBy = findPreference(getString(R.string.settings_order_by_key));
+            bindPreferenceSummaryToValue(orderBy);
 
-            Preference topic = findPreference(getString(R.string.settings_topic_key));
-            bindPreferenceSummaryToValue(topic);
         }
 
         public boolean onPreferenceChange(Preference preference, Object value) {

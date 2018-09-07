@@ -16,17 +16,17 @@
     <string name="settings_topic_key" translatable="false">display_topic</string>
     <string name="settings_topic_default" translatable="false">Nollywood</string>
 
-    <!-- Label 4 pidgin -->
-    <string name="settings_topic_pidgin_label">Pidgin</string>
-    <string name="settings_topic_pidgin_value" translatable="false">pidgin</string>
+    <!-- Label 4 Relevance -->
+    <string name="settings_order_by_relevance_label">Relevance</string>
+    <string name="settings_order_by_relevance_value" translatable="false">relevance</string>
 
-    <!-- Label 4 foreign -->
-    <string name="settings_topic_foreign_label">Foreign</string>
-    <string name="settings_topic_foreign_value" translatable="false">foreign</string>
+    <!-- Label 4 newest -->
+    <string name="settings_order_by_newest_label">Newest</string>
+    <string name="settings_order_by_newest_value" translatable="false">newest</string>
 
-    <!-- Label 4 movies -->
-    <string name="settings_topic_movies_label">Movies</string>
-    <string name="settings_topic_movies_value" translatable="false">movies</string>
+    <!-- Label 4 oldest -->
+    <string name="settings_order_by_oldest_label">Oldest</string>
+    <string name="settings_order_by_oldest_value" translatable="false">oldest</string>
 
 
     <!-- Strings related to Settings -->

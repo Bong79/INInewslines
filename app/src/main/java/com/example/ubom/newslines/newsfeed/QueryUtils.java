@@ -159,6 +159,8 @@ public class QueryUtils {
     //Goes to arraylist with json results
     static List<News> parseJson(String response) {
         ArrayList<News> listOfNews = new ArrayList<>();
+        Log.e(LOG_TAG, "Response from url: " + response);
+
         try {
             JSONObject jsonResponse = new JSONObject(response);
             JSONObject jsonResults = jsonResponse.getJSONObject("response");
