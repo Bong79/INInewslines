@@ -86,7 +86,7 @@ public class MainActivity
         getSupportLoaderManager().initLoader(LOADER_ID, null, this);
     }
 
-
+//checks network connection
     public boolean isNetworkConnected() {
         ConnectivityManager connectivity = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 
@@ -106,44 +106,30 @@ public class MainActivity
 
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
 
-        // getString retrieves a String value from the preferences. The second parameter is the default value for this preference.
+            String stringUrl = QueryUtils.createStringUrl();
+
+        String minAmountNews = sharedPrefs.getString(
+                getString(R.string.settings_min_amount_news_key),
+                getString(R.string.settings_min_amount_news_default));
+
         String orderBy = sharedPrefs.getString(
                 getString(R.string.settings_order_by_key),
                 getString(R.string.settings_order_by_default)
         );
 
-
-//        Uri baseUri = Uri.parse(GUARDIAN_REQUEST_URL);
-//
-//        // buildUpon prepares the baseUri that we just parsed so we can add query parameters to it
-//        Uri.Builder uriBuilder = baseUri.buildUpon();
-//
-
-//        uriBuilder.appendQueryParameter("format", "json");
-//        uriBuilder.appendQueryParameter("page-size", "10");
-//        uriBuilder.appendQueryParameter("order-by", "relevance");
-//        uriBuilder.appendQueryParameter("order-by", "oldest");
-
-//        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
-//        String topic = sharedPrefs.getString(
-//                getString(R.string.settings_topic_key),
-//                getString(R.string.settings_topic_default)
-//        );
-
-//        URL url = QueryUtils.createUrl();
-
         // parse breaks apart the URI string that's passed into its parameter
-
         Uri baseUri = Uri.parse(GUARDIAN_REQUEST_URL);
 
-        //        // Append query parameter and its value. For example, the `format=geojson`
+        // buildUpon prepares the baseUri that we just parsed so we can add query parameters to it
         Uri.Builder uriBuilder = baseUri.buildUpon();
-        uriBuilder.appendQueryParameter("order-by", "oldest");
-        uriBuilder.appendQueryParameter("order-by", "relevance");
 
+        // Append query parameter and its value. For example, the `format=geojson`
+        uriBuilder.appendQueryParameter("format", "json");
+        uriBuilder.appendQueryParameter("limit", "10");
+        uriBuilder.appendQueryParameter("page-size", minAmountNews);
+        uriBuilder.appendQueryParameter("orderby", orderBy);
 
-        // Return the completed uri `http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&limit=10&minmag=minMagnitude&orderby=time
-        return new NewsLoader(this, uriBuilder.toString());
+        return new NewsLoader(this, stringUrl);
 
     }
 
@@ -157,8 +143,6 @@ public class MainActivity
             adapter.addAll(data);
         }
     }
-
-
 
     @Override
     public void onLoaderReset(Loader<List<News>> loader) {

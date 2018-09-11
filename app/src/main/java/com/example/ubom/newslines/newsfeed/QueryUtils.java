@@ -29,19 +29,20 @@ public class QueryUtils {
 
     public static final String LOG_TAG = MainActivity.class.getSimpleName();
 
-//    static String createStringUrl() {
-//        Uri.Builder builder = new Uri.Builder();
-//        builder.scheme("http")
-//                .encodedAuthority("content.guardianapis.com")
-//                .appendPath("search")
-//                .appendQueryParameter("order-by", "orderBy")
-//                .appendQueryParameter("show-references", "author")
-//                .appendQueryParameter("show-tags", "contributor")
-//                .appendQueryParameter("q", "Nollywood")
-//                .appendQueryParameter("api-key", "896df9d7-548f-41eb-b4a0-475707743f15");
-//        String url = builder.build().toString();
-//        return url;
-//    }
+    static String createStringUrl() {
+        Uri.Builder builder = new Uri.Builder();
+        builder.scheme("https")
+                .encodedAuthority("content.guardianapis.com")
+                .appendPath("search")
+                .appendQueryParameter("order-by", "oldest")
+                .appendQueryParameter("show-references", "author")
+                .appendQueryParameter("show-tags", "contributor")
+                .appendQueryParameter("q", "Nollywood")
+                .appendQueryParameter("api-key", "896df9d7-548f-41eb-b4a0-475707743f15");
+        String url = builder.build().toString();
+
+        return url;
+    }
 
     public static List<News> fetchNewsData(String requestUrl) {
         // Create URL object
@@ -61,17 +62,6 @@ public class QueryUtils {
         // Return the {@link Event}
         return listOfNews;
     }
-
-//    static URL createUrl() {
-//    private static URL createUrl(String stringUrl) {
-//    String stringUrl = createStringUrl();
-//        try {
-//            return new URL(stringUrl);
-//        } catch (MalformedURLException e) {
-//            Log.e("Queryutils", "Error creating URL: ", e);
-//            return null;
-//        }
-//    }
 
     public static URL createUrl(String stringUrl) {
         URL url = null;

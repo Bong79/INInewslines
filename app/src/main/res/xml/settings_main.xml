@@ -7,8 +7,15 @@
         android:defaultValue="date"
         android:entries="@array/settings_order_by_labels"
         android:entryValues="@array/settings_order_by_values"
-        android:key="Settings order by key"
+        android:key="order_by"
         android:title="Order by"
-        android:summary="%s"
-        />
+        android:summary="%s"/>
+    <EditTextPreference
+        android:defaultValue="@string/settings_min_amount_news_default"
+        android:inputType="numberDecimal"
+        android:key="@string/settings_min_amount_news_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/settings_min_amount_news" />
+
+    />
 </PreferenceScreen>

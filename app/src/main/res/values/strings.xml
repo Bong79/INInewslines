@@ -4,14 +4,13 @@
     <string name="settings_menu_item">Settings</string>
     <string name="settings_title">Settings Menu</string>
     <string name="settings_menu_change_date">Change Date</string>
-    <string name="settings_topic_category">Topic Category</string>
+
     <string name="settings_order_by_key" translatable="false">order_by</string>
     <string name="settings_order_by_default" translatable="false">@string/settings_order_by_subject_value</string>
     <string name="settings_order_by_subject_value" translatable="false">keyword</string>
     <string name="settings_order_by_most_recent_label">Most Recent</string>
     <string name="settings_order_by_most_recent_value" translatable="false">newest</string>
 
-    <string name="settings_menu_change_topic">Change Topic </string>
 
     <string name="settings_topic_key" translatable="false">display_topic</string>
     <string name="settings_topic_default" translatable="false">Nollywood</string>
@@ -27,6 +26,11 @@
     <!-- Label 4 oldest -->
     <string name="settings_order_by_oldest_label">Oldest</string>
     <string name="settings_order_by_oldest_value" translatable="false">oldest</string>
+
+    <!--For Edittext -->
+    <string name="settings_min_amount_news">Amount of news stories</string>
+    <string name="settings_min_amount_news_key" translatable="false">min_amount_news</string>
+    <string name="settings_min_amount_news_default" translatable="false">25</string>
 
 
     <!-- Strings related to Settings -->

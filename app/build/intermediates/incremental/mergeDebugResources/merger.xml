@@ -1896,39 +1896,39 @@
         <item>@string/settings_order_by_relevance_value</item>
         <item>@string/settings_order_by_newest_value</item>
         <item>@string/settings_order_by_oldest_value</item>
-    </string-array></file><file path="/Users/ubom/Downloads/INInewslines/app/src/main/res/values/colors.xml" qualifiers=""><color name="colorPrimary">#47b53f</color><color name="colorPrimaryDark">#99309f</color><color name="colorAccent">#ff9940</color></file><file path="/Users/ubom/Downloads/INInewslines/app/src/main/res/values/dimens.xml" qualifiers=""><dimen name="activity_horizontal_margin">16dp</dimen><dimen name="activity_vertical_margin">16dp</dimen></file><file path="/Users/ubom/Downloads/INInewslines/app/src/main/res/values/strings.xml" qualifiers=""><string name="app_name">NollywoodNewslines</string><string name="empty_list">Notin dey here! (No News - Check the network connection)</string><string name="settings_menu_item">Settings</string><string name="settings_title">Settings Menu</string><string name="settings_menu_change_date">Change Date</string><string name="settings_topic_category">Topic Category</string><string name="settings_order_by_key" translatable="false">order_by</string><string name="settings_order_by_default" translatable="false">@string/settings_order_by_subject_value</string><string name="settings_order_by_subject_value" translatable="false">keyword</string><string name="settings_order_by_most_recent_label">Most Recent</string><string name="settings_order_by_most_recent_value" translatable="false">newest</string><string name="settings_menu_change_topic">Change Topic </string><string name="settings_topic_key" translatable="false">display_topic</string><string name="settings_topic_default" translatable="false">Nollywood</string><string name="settings_order_by_relevance_label">Relevance</string><string name="settings_order_by_relevance_value" translatable="false">relevance</string><string name="settings_order_by_newest_label">Newest</string><string name="settings_order_by_newest_value" translatable="false">newest</string><string name="settings_order_by_oldest_label">Oldest</string><string name="settings_order_by_oldest_value" translatable="false">oldest</string><string name="pref_header_general">General</string><string name="pref_title_social_recommendations">Enable social recommendations</string><string name="pref_description_social_recommendations">Recommendations for people to contact
+    </string-array></file><file path="/Users/ubom/Downloads/INInewslines/app/src/main/res/values/colors.xml" qualifiers=""><color name="colorPrimary">#47b53f</color><color name="colorPrimaryDark">#99309f</color><color name="colorAccent">#ff9940</color></file><file path="/Users/ubom/Downloads/INInewslines/app/src/main/res/values/dimens.xml" qualifiers=""><dimen name="activity_horizontal_margin">16dp</dimen><dimen name="activity_vertical_margin">16dp</dimen></file><file path="/Users/ubom/Downloads/INInewslines/app/src/main/res/values/strings.xml" qualifiers=""><string name="app_name">NollywoodNewslines</string><string name="empty_list">Notin dey here! (No News - Check the network connection)</string><string name="settings_menu_item">Settings</string><string name="settings_title">Settings Menu</string><string name="settings_menu_change_date">Change Date</string><string name="settings_order_by_key" translatable="false">order_by</string><string name="settings_order_by_default" translatable="false">@string/settings_order_by_subject_value</string><string name="settings_order_by_subject_value" translatable="false">keyword</string><string name="settings_order_by_most_recent_label">Most Recent</string><string name="settings_order_by_most_recent_value" translatable="false">newest</string><string name="settings_topic_key" translatable="false">display_topic</string><string name="settings_topic_default" translatable="false">Nollywood</string><string name="settings_order_by_relevance_label">Relevance</string><string name="settings_order_by_relevance_value" translatable="false">relevance</string><string name="settings_order_by_newest_label">Newest</string><string name="settings_order_by_newest_value" translatable="false">newest</string><string name="settings_order_by_oldest_label">Oldest</string><string name="settings_order_by_oldest_value" translatable="false">oldest</string><string name="settings_min_amount_news_key" translatable="false">min_amount_news</string><string name="settings_min_amount_news_default" translatable="false">25</string><string name="settings_min_amount_news">Amount of news stories</string><string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array><string name="pref_header_notifications">Notifications</string><string name="pref_title_system_sync_settings">System sync settings</string><string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array><string name="pref_default_display_name">John Smith</string><string name="pref_description_social_recommendations">Recommendations for people to contact
         based on your message history
-    </string><string name="pref_title_display_name">Display name</string><string name="pref_default_display_name">John Smith</string><string name="pref_title_add_friends_to_messages">Add friends to messages</string><string-array name="pref_example_list_titles">
-        <item>Always</item>
-        <item>When possible</item>
-        <item>Never</item>
-    </string-array><string-array name="pref_example_list_values">
+    </string><string name="pref_title_add_friends_to_messages">Add friends to messages</string><string name="pref_title_vibrate">Vibrate</string><string name="pref_header_data_sync">Data &amp; sync</string><string name="pref_title_sync_frequency">Sync frequency</string><string-array name="pref_example_list_values">
         <item>1</item>
         <item>0</item>
         <item>-1</item>
-    </string-array><string name="pref_header_data_sync">Data &amp; sync</string><string name="pref_title_sync_frequency">Sync frequency</string><string-array name="pref_sync_frequency_titles">
+    </string-array><string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array><string name="pref_ringtone_silent">Silent</string><string name="pref_title_social_recommendations">Enable social recommendations</string><string name="pref_title_ringtone">Ringtone</string><string-array name="pref_sync_frequency_titles">
         <item>15 minutes</item>
         <item>30 minutes</item>
         <item>1 hour</item>
         <item>3 hours</item>
         <item>6 hours</item>
         <item>Never</item>
-    </string-array><string-array name="pref_sync_frequency_values">
+    </string-array><string name="pref_header_general">General</string><string-array name="multi_select_list_preference_default_value"/><string name="pref_title_display_name">Display name</string><string-array name="pref_sync_frequency_values">
         <item>15</item>
         <item>30</item>
         <item>60</item>
         <item>180</item>
         <item>360</item>
         <item>-1</item>
-    </string-array><string-array name="list_preference_entries">
-        <item>Entry 1</item>
-        <item>Entry 2</item>
-        <item>Entry 3</item>
-    </string-array><string-array name="list_preference_entry_values">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-    </string-array><string-array name="multi_select_list_preference_default_value"/><string name="pref_title_system_sync_settings">System sync settings</string><string name="pref_header_notifications">Notifications</string><string name="pref_title_new_message_notifications">New message notifications</string><string name="pref_title_ringtone">Ringtone</string><string name="pref_ringtone_silent">Silent</string><string name="pref_title_vibrate">Vibrate</string></file><file path="/Users/ubom/Downloads/INInewslines/app/src/main/res/values/styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    </string-array><string name="pref_title_new_message_notifications">New message notifications</string></file><file path="/Users/ubom/Downloads/INInewslines/app/src/main/res/values/styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
