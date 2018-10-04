@@ -59,6 +59,7 @@ public class SettingsActivity extends AppCompatActivity {
             Preference minAmountNews = findPreference(getString(R.string.settings_min_amount_news_key));
             bindPreferenceSummaryToValue(minAmountNews);
 
+
         }
 
         public boolean onPreferenceChange(Preference preference, Object value) {

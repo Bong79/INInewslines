@@ -30,5 +30,13 @@
         android:layout_height="match_parent"
         android:text="@string/empty_list"
         />
+    <!-- Loading indicator for user feedback between queries to USGS -->
+    <ProgressBar
+        android:id="@+id/loading_indicator"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
 
 </RelativeLayout>
