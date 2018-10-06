@@ -256,7 +256,8 @@ public class MainActivity extends AppCompatActivity
      * URL for earthquake data from the USGS dataset
      */
     private static final String GUARDIAN_REQUEST_URL =
-            "https://content.guardianapis.com/";
+            "https://content.guardianapis.com/search";
+//                    "?q=nollywood&api-key=896df9d7-548f-41eb-b4a0-475707743f15";
 
     /**
      * Constant value for the earthquake loader ID. We can choose any integer.
@@ -283,8 +284,8 @@ public class MainActivity extends AppCompatActivity
 
         //finds view by id named list view
         ListView listView = (ListView) findViewById(android.R.id.list);
-        TextView emptyText = (TextView) findViewById(android.R.id.empty);
-        listView.setEmptyView(emptyText);
+        mEmptyStateTextView = (TextView) findViewById(android.R.id.empty);
+        listView.setEmptyView(mEmptyStateTextView);
 
         // a new NewsAdapter called adapter: takes an empty list news (as input)
         adapter = new NewsAdapter(this);
@@ -316,6 +317,8 @@ public class MainActivity extends AppCompatActivity
                 startActivity(intent);
             }
         });
+        getLoaderManager().initLoader(LOADER_ID, null, this);
+        Log.d(LOG_TAG, "onCreate: loader33 INITIALIZED");
 
 
         // Get a reference to the ConnectivityManager to check state of network connectivity
@@ -387,8 +390,9 @@ public class MainActivity extends AppCompatActivity
                 Uri.Builder uriBuilder = baseUri.buildUpon();
 
                 // Append query parameter and its value. For example, the `format=geojson`
-                Log.d(LOG_TAG, "onCreateLoader() returned: " + uriBuilder);
+//                Log.d(LOG_TAG, "onCreateLoader() returned: " + uriBuilder);
 
+                uriBuilder.appendQueryParameter("api-key", "896df9d7-548f-41eb-b4a0-475707743f15");
                 uriBuilder.appendQueryParameter("format", "json");
                 uriBuilder.appendQueryParameter("limit", "10");
                 uriBuilder.appendQueryParameter("page-size", minAmountNews);
@@ -396,8 +400,6 @@ public class MainActivity extends AppCompatActivity
 
                 Log.d(LOG_TAG, "NewsLoader stringUrl: " + uriBuilder);
                 return new NewsLoader(this, uriBuilder.toString());
-
-//                        return new NewsLoader(this, stringUrl);
 
             }
 
@@ -408,10 +410,10 @@ public class MainActivity extends AppCompatActivity
                 loadingIndicator.setVisibility(View.GONE);
 
                 // Set empty state text to display "No earthquakes found."
-                mEmptyStateTextView.setText(R.string.no_news);
+                mEmptyStateTextView.setText(R.string.empty_list);
 
                 // Clear the adapter of previous earthquake data
-                //mAdapter.clear();
+//                adapter.clear();
 
                 // If there is a valid list of {@link Earthquake}s, then add them to the adapter's
                 // data set. This will trigger the ListView to update.

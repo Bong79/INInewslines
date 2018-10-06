@@ -230,7 +230,7 @@ public final class QueryUtils {
         try {
             url = new URL(stringUrl);
         } catch (MalformedURLException e) {
-            Log.e(LOG_TAG, "Problem building the URL ", e);
+//            Log.e(LOG_TAG, "Problem building the URL ", e);
         }
         return url;
     }
@@ -315,9 +315,17 @@ public final class QueryUtils {
             // Create a JSONObject from the JSON response string
             JSONObject baseJsonResponse = new JSONObject(newsJSON);
 
+            //extract JSONObject with key named "response" (a news event list of results)
+            JSONObject responseResult = baseJsonResponse.getJSONObject("response");
+
             // Extract the JSONArray associated with the key called "features",
             // which represents a list of features (or earthquakes).
-            JSONArray newsArray = baseJsonResponse.getJSONArray("features");
+            JSONArray newsArray = responseResult.getJSONArray("results");
+
+            //build a JSON object of NewsEvent features with the corresponding data
+//            JSONObject baseJsonResponse = new JSONObject(newsEventJSON);
+
+            //            JSONArray currentArticles = responseResult.getJSONArray("results");
 
             // For each earthquake in the earthquakeArray, create an {@link Earthquake} object
             for (int i = 0; i < newsArray.length(); i++) {
@@ -328,7 +336,7 @@ public final class QueryUtils {
                 // For a given earthquake, extract the JSONObject associated with the
                 // key called "properties", which represents a list of all properties
                 // for that earthquake.
-                JSONObject properties = currentNews.getJSONObject("properties");
+//                JSONObject properties = currentNews.getJSONObject("properties");
 
                 String section = currentNews.getString("sectionName");
 
@@ -340,6 +348,8 @@ public final class QueryUtils {
                 String date = currentNews.getString("webPublicationDate");
                 date = formatDate(date);
                 String url = currentNews.getString("webUrl");
+
+                Log.d(LOG_TAG, "parseJson: ");
                 JSONArray tags = currentNews.getJSONArray("tags");
 
                 String author;

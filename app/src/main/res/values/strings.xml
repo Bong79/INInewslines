@@ -105,6 +105,6 @@
 
     <string name="pref_title_vibrate">Vibrate</string>
     <string name="no_internet_connection">no_internet_connection</string>
-    <string name="no_news">no_news</string>
+
 
 </resources>

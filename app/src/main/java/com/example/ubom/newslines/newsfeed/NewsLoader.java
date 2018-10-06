@@ -1,7 +1,7 @@
 package com.example.ubom.newslines.newsfeed;
 
 import android.content.Context;
-import android.support.v4.content.AsyncTaskLoader;
+import android.content.AsyncTaskLoader;
 import android.util.Log;
 
 import java.io.IOException;
@@ -22,7 +22,6 @@ public class NewsLoader extends AsyncTaskLoader<List<News>> {
      */
 
     private String url;
-
     /**
      * Constructs a new {@link NewsLoader}.
      *
